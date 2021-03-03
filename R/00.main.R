@@ -1,7 +1,7 @@
 a<-read.csv("S:/Users/Dain/R/energy/data/trade_raw1.csv",header=T)
 
 b <-log(a[,2:25])
-# a?????? ???? ????
+
 x<-seq(1:dim(a)[1])
 
 fit.lm<-lm(b[,4]~x)
